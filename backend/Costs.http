@@ -1,0 +1,36 @@
+### COSTS LIST
+GET https://cooklator-backend.onrender.com/costs
+
+
+### CREATE COSTS
+POST https://cooklator-backend.onrender.com/costs
+content-type: application/json
+
+{
+  "id": 2,
+  "userId": 2,
+  "recipeId": 2,
+  "totalMaterialCost": 60.0,
+  "totalTimeValue": 3.0,
+  "totalCost": 63.0
+}
+
+### UPDATE COSTS
+PUT https://cooklator-backend.onrender.com/costs/1
+content-type: application/json
+
+{
+  "id": 2,
+  "userId": 2,
+  "recipeId": 2,
+  "totalMaterialCost": 10.0,
+  "totalTimeValue": 5.0,
+  "totalCost": 15.0
+}
+
+
+### GET COSTS
+GET https://cooklator-backend.onrender.com/costs/1
+
+### DELETE COSTS
+DELETE https://cooklator-backend.onrender.com/costs/1

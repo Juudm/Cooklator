@@ -1,0 +1,46 @@
+### GET RECIPE LIST
+GET https://cooklator-backend.onrender.com/recipe
+
+
+### CREATE RECIPE
+POST https://cooklator-backend.onrender.com/recipe
+content-type: application/json
+
+{
+  "name": "pudim",
+  "hourValue": 0,
+  "appliesDefaultValue": true,
+  "comments": "",
+  "color": "#98FB98",
+  "id": 2,
+  "preparationTime": "",
+  "startDate": "2023-11-21T12:34:56.789Z",
+  "isConcluded": false,
+  "userId": 9,
+  "totalCost": 0
+}
+
+### UPDATE RECIPE
+PUT https://cooklator-backend.onrender.com/recipe/1
+content-type: application/json
+
+{
+  "id": 1,
+  "name": "torta de manteiga escocesa",
+  "hourValue": 3.0,
+  "appliesDefaultValue": false,
+  "comments": "Testando a receita com flor de sal",
+  "color":"#176B87",
+  "preparationTime": "",
+  "startDate": "2023-11-21T12:34:56.789Z",
+  "isConcluded": false,
+  "userId": 9,
+  "totalCost": 0
+}
+
+
+### GET RECIPE
+GET https://cooklator-backend.onrender.com/recipe/1
+
+### DELETE RECIPE
+DELETE https://cooklator-backend.onrender.com/recipe/4

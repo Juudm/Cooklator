@@ -1,0 +1,56 @@
+@TOKEN=TOKEN_KEY
+#### LOGIN
+POST https://cooklator-backend.onrender.com/login
+content-type: application/json
+
+{
+  "email": "klebersouza@pucminas.br",
+  "password":"pucminas"
+}
+
+
+### users LIST
+GET https://cooklator-backend.onrender.com/users
+#GET https://cooklator-backend.onrender.com/660/users
+#Authorization: Bearer {{TOKEN}}
+
+### CREATE users
+#POST https://cooklator-backend.onrender.com/660/users
+POST https://cooklator-backend.onrender.com/users
+content-type: application/json
+
+{
+  "name": "Ju Teste",
+  "email": "ju@ju.com",
+  "password": "senha123",
+  "hourValue": 5.0,
+  "applyToAllProjects": false
+
+}
+
+
+### UPDATE users
+PUT https://cooklator-backend.onrender.com/users/1
+#PUT https://cooklator-backend.onrender.com/660/users/1
+content-type: application/json
+#Authorization: Bearer {{TOKEN}}
+
+{
+  "id": 1,
+  "name": "Juliana",
+  "email": "ju@tste.com",
+  "password": "senha",
+  "hourValue": 5.0,
+  "applyToAllProjects": false
+}
+
+
+### GET users
+GET https://cooklator-backend.onrender.com/users/1
+#GET https://cooklator-backend.onrender.com/660/users/1
+#Authorization: Bearer {{TOKEN}}
+
+### DELETE users
+DELETE https://cooklator-backend.onrender.com/users/1
+#DELETE https://cooklator-backend.onrender.com/660/users/1
+#Authorization: Bearer {{TOKEN}}

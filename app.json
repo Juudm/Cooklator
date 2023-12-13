@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "cooklator",
+    "slug": "cooklator",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

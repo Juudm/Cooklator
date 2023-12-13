@@ -1,0 +1,38 @@
+### MATERIAL LIST
+GET https://cooklator-backend.onrender.com/material
+
+
+### CREATE MATERIAL
+POST https://cooklator-backend.onrender.com/material
+content-type: application/json
+
+{
+  "id": 2,
+  "idUsuario": 2,
+  "idReceita": 2,
+  "name": "Creme de Leite",
+  "comments": "sem lactose",
+  "price": 6.0,
+  "amount": 3.0
+}
+
+### UPDATE MATERIAL
+PUT https://cooklator-backend.onrender.com/material/1
+content-type: application/json
+
+{
+  "id": 1,
+  "idUsuario": 1,
+  "idReceita": 1,
+  "name": "Granulado",
+  "comments": "marca: nestle",
+  "price": 3.0,
+  "amount": 1.0
+}
+
+
+### GET MATERIAL
+GET https://cooklator-backend.onrender.com/material/1
+
+### DELETE MATERIAL
+DELETE https://cooklator-backend.onrender.com/material/1
